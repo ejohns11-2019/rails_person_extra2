@@ -1,0 +1,23 @@
+<h1><%= @person.id ? 'Edit Person' : 'Create Person' %></h1>
+<hr>
+<%= form_for @person do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age, required: true %>
+
+  <%= f.label :eye_color %>
+  <%= f.text_field :eye_color%>
+
+  <%= f.label :hair_color %>
+  <%= f.text_field :hair_color %>
+
+  <%= f.label :gender %>
+  <%= f.text_field :gender %>
+
+  <%= f.label :alive %>
+  <%= f.text_field :alive %>
+
+  <%= f.submit %>
+<% end %>

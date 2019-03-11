@@ -1,0 +1,14 @@
+<h1><%= @person.name_age %></h1>
+<hr>
+<p>What would you like to do?</p>
+<%= link_to 'Edit Person', edit_person_path(@person) %>
+<br>
+<%= link_to 'Delete Person', @person, method: :delete %>
+<hr>
+<%= "Gender: #{@person.gender}" %>
+<br>
+<%= "Hair color: #{@person.hair_color}" %>
+<br>
+<%= "Eye Color: #{@person.eye_color}" %>
+<br>
+<%= "#{@person.name} is alive:#{@person.alive}" %>
